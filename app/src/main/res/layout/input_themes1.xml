@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.riverplate.keyboardtheme.LatinKeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:keyPreviewLayout="@layout/themes1_key_preview"
+    android:background="@drawable/keyboard_bg1"
+    android:keyBackground="@drawable/themes1_key"
+    android:paddingTop="3dp" />
+
+    <!---->

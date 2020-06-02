@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    android:weightSum="11">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:background="@drawable/main_header"
+        android:gravity="center"
+        android:text="riverplate Theme Keyboard"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/l_lay_keyboard_enableKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1"
+        android:background="@drawable/enablekeyboard"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:src="@drawable/enablekeyboard_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="EnableKeyboard"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_lay_keyboard_SetInputMethod"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1"
+        android:background="@drawable/setinputmethod"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:src="@drawable/setthemes_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Set Input Method"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l_lay_keyboard_setThemes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1"
+        android:background="@drawable/setthemes"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:src="@drawable/setthemicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="SetThemes"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_lay_keyboard_setThemesBackground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1"
+        android:background="@drawable/setthemesbackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:src="@drawable/setthemesbackground_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Themes Background"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+    <!--   <Button
+          android:id="@+id/btn_keyboard_enableKeyboard"
+          android:layout_width="wrap_content"
+           android:layout_height="0dp"
+          android:layout_weight="2"
+          android:text="EnableKeyboard"
+          android:background="@drawable/enablekeyboard" /> -->
+
+    <!--  <Button
+         android:id="@+id/btn_keyboard_SetInputMethod"
+         android:layout_width="wrap_content"
+          android:layout_height="0dp"
+         android:layout_weight="2"
+         android:text="Set Input Method"
+         android:background="@drawable/setinputmethod"/> -->
+
+    <!--  <Button
+        android:id="@+id/btn_keyboard_setThemes"
+        android:layout_width="wrap_content"
+         android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="SetThemes" 
+        android:background="@drawable/setthemes"/> -->
+    <!--   <Button
+        android:id="@+id/btn_keyboard_setThemesBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="SetThemesBackground"
+        android:background="@drawable/setthemesbackground" /> -->
+
+
+</LinearLayout>
