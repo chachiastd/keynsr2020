@@ -14,7 +14,7 @@
 
     <!-- Labels for subtype -->
     <string name="label_subtype_generic" translatable="false">%s</string>
-    <string name="keyboard_name" translatable="false">keyboard theme for riverplate</string>
+    <string name="keyboard_name" translatable="false">butterfly theme keyboard</string>
 
     <!-- Titles for ImePreference -->
     <string name="settings_name" translatable="false">Android Keyboard Settings</string>
@@ -22,7 +22,6 @@
     <string name="select_language" translatable="false">Select input languages</string>
     <string name="general_category" translatable="false">General</string>
 
-    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-1984381475978396/8953381580</string>
-    <string name="ad_unit_id" translatable="false">ca-app-pub-1984381475978396/3322808621</string>
-    <string name="addId">ca-app-pub-1984381475978396~9328979627</string>
+    <string name="ad_unit_id" translatable="false">ca-app-pub-9413304849687382/3335417300</string>
+    <string name="addId">ca-app-pub-9413304849687382~8912027674</string>
 </resources>

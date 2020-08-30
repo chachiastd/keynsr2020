@@ -1,41 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.riverplate.keyboardtheme">
+    package="com.butterfly.pink_keyboard">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:icon="@drawable/ic_launcher"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_background"
         android:label="@string/ime_name"
         android:theme="@style/AppTheme"
-        android:allowBackup="false"
         tools:ignore="GoogleAppIndexingWarning">
-        <!-- Sample AdMob App ID: ca-app-pub-1984381475978396~9328979627 -->
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-1984381475978396~9328979627"/>
-        <!--This meta-data tag is required to use Google Play Services.-->
-        <activity
-            android:name="com.riverplate.keyboardtheme.keybord.KeyBoardActivity"
-            android:label="@string/ime_name"
-            android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!-- Sample AdMob App ID: ca-app-pub-9413304849687382~8912027674 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9413304849687382~8912027674" /> <!-- This meta-data tag is required to use Google Play Services. -->
         <activity
-            android:name="com.riverplate.keyboardtheme.keybord.ThemesListActivity"
+            android:name=".keybord.KeyBoardActivity"
+            android:label="@string/ime_name"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".keybord.ThemesListActivity"
             android:theme="@style/AppTheme" />
-
         <activity
-            android:name="com.riverplate.keyboardtheme.keybord.Crope"
+            android:name=".keybord.Crope"
             android:theme="@style/AppTheme" />
-
-        <activity android:name="com.riverplate.keyboardtheme.keybord.ThemesBackgroundActivity" />
-        <activity android:name="com.riverplate.keyboardtheme.keybord.CustomeThemesActivity" />
+        <activity android:name=".keybord.ThemesBackgroundActivity" />
+        <activity android:name=".keybord.CustomeThemesActivity" />
         <activity
-            android:name="com.riverplate.keyboardtheme.ImePreferences"
+            android:name=".ImePreferences"
             android:label="@string/settings_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,23 +49,16 @@
         </activity>
 
         <service
-            android:name="com.riverplate.keyboardtheme.SoftKeyboard"
+            android:name=".SoftKeyboard"
             android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
             </intent-filter>
+
             <meta-data
                 android:name="android.view.im"
                 android:resource="@xml/method" />
         </service>
-
-
     </application>
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

@@ -4,8 +4,8 @@
    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:weightSum="10"
-    android:background="@drawable/app_background" >
+    android:weightSum="12"
+    android:background="@drawable/bg" >
     
   <TextView 
         android:layout_width="fill_parent"
@@ -24,7 +24,7 @@
         	android:layout_weight="2"
         	android:gravity="center_vertical"
         	android:paddingLeft="10dp"
-        	android:background="@drawable/enablekeyboard">
+        	android:background="@drawable/nsr_color_2">
             
           	<ImageView 
             	android:layout_width="60dp"
@@ -39,7 +39,7 @@
             	android:layout_height="wrap_content"
             	android:gravity="center"
             	android:textColor="@android:color/white"
-            	android:textSize="20sp"
+            	android:textSize="25sp"
             	android:focusable="false"
             	android:text="Background"/>
          </LinearLayout>
@@ -80,7 +80,7 @@
         android:layout_weight="2"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
-        android:background="@drawable/setthemes">
+        android:background="@drawable/nsr_color_3">
             
           <ImageView 
             android:layout_width="60dp"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:focusable="false"
             android:text="Set Background Gallery"/>
          </LinearLayout>
@@ -135,7 +135,7 @@
         android:layout_weight="2"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
-        android:background="@drawable/setthemesbackground">
+        android:background="@drawable/nsr_color_1">
             
           <ImageView 
             android:layout_width="60dp"
@@ -150,28 +150,12 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:focusable="false"
             android:text="SetThemes"/>
          </LinearLayout>
 
-	<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
-		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:layout_weight="1">
 
-		<com.google.android.gms.ads.AdView
-			android:id="@+id/adView"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentBottom="true"
-			android:layout_centerHorizontal="true"
-			ads:adSize="BANNER"
-			ads:adUnitId="@string/banner_ad_unit_id">
-
-		</com.google.android.gms.ads.AdView>
-
-	</RelativeLayout>
 
       
   
